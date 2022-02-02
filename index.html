@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Adventures At Marina Bay</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster&effect=emboss">
+		<style>
+			div.headingbackground{
+				background-image: url("clouds.jfif");
+				background-repeat: no-repeat;
+				background-size: cover;
+				background-position: center;
+				background-attachment: fixed;
+			}
+			
+			p.hidden{
+				border-style: hidden;
+			}
+			
+			body{
+				background-color: #FFFFFF;
+			}
+			
+			* {box-sizing: border-box}
+			body {font-family: Verdana, sans-serif; margin:0}
+			.mySlides {display: none}
+			img {vertical-align: middle;}
+
+			/* Slideshow container */
+			.slideshow-container {
+			  max-width: 1000px;
+			  position: relative;
+			  margin: auto;
+			}
+
+			/* Next & previous buttons */
+			.prev, .next {
+			  cursor: pointer;
+			  position: absolute;
+			  top: 50%;
+			  width: auto;
+			  padding: 16px;
+			  margin-top: -22px;
+			  color: white;
+			  font-weight: bold;
+			  font-size: 18px;
+			  transition: 0.6s ease;
+			  border-radius: 0 3px 3px 0;
+			  user-select: none;
+			}
+
+			/* Position the "next button" to the right */
+			.next {
+			  right: 0;
+			  border-radius: 3px 0 0 3px;
+			}
+
+			/* On hover, add a black background color with a little bit see-through */
+			.prev:hover, .next:hover {
+			  background-color: rgba(0,0,0,0.8);
+			}
+
+			/* Caption text */
+			.text {
+			  color: #f2f2f2;
+			  font-size: 15px;
+			  padding: 8px 12px;
+			  position: absolute;
+			  bottom: 8px;
+			  width: 100%;
+			  text-align: center;
+			}
+
+			/* Number text (1/3 etc) */
+			.numbertext {
+			  color: #f2f2f2;
+			  font-size: 12px;
+			  padding: 8px 12px;
+			  position: absolute;
+			  top: 0;
+			}
+
+			/* The dots/bullets/indicators */
+			.dot {
+			  cursor: pointer;
+			  height: 15px;
+			  width: 15px;
+			  margin: 0 2px;
+			  background-color: #bbb;
+			  border-radius: 50%;
+			  display: inline-block;
+			  transition: background-color 0.6s ease;
+			}
+
+			.active, .dot:hover {
+			  background-color: #717171;
+			}
+
+			/* Fading animation */
+			.fade {
+			  -webkit-animation-name: fade;
+			  -webkit-animation-duration: 1.5s;
+			  animation-name: fade;
+			  animation-duration: 1.5s;
+			}
+
+			@-webkit-keyframes fade {
+			  from {opacity: .4} 
+			  to {opacity: 1}
+			}
+
+			@keyframes fade {
+			  from {opacity: .4} 
+			  to {opacity: 1}
+			}
+
+			/* On smaller screens, decrease text size */
+			@media only screen and (max-width: 300px) {
+			  .prev, .next,.text {font-size: 11px}
+			}
+			
+			.container {
+			  position: relative;
+			  font-family: Arial;
+			}
+			
+			.text-block {
+			  position: absolute;
+			  bottom: 20px;
+			  right: 20px;
+			  background-color: black;
+			  color: white;
+			  padding-left: 20px;
+			  padding-right: 20px;
+			}
+					
+			.center {
+			  display: block;
+			  margin-left: auto;
+			  margin-right: auto;
+			  width: 50%;
+			}
+			
+			hr.solid {
+			  border-top: 3px solid #bbb;
+			}
+			
+			.img-container {
+			  float: left;
+			  width: 33.33%;
+			  padding: 5px;
+			}
+
+			.clearfix::after {
+			  content: "";
+			  clear: both;
+			  display: table;
+			}
+			
+			.centered {
+			  position: absolute;
+			  top: 50%;
+			  left: 50%;
+			  transform: translate(-50%, -50%);
+			}
+		</style>
+	</head>
+	<body>
+		<div class= "headingbackground">
+		<br>
+		<h1 style = "text-align:center; font-size: 70px; font-weight: bold; font-family: Lobster; color: black;" class="font-effect-emboss">
+			Marina Bay:
+			<br>
+			City in an Island
+		</h1>
+		<p style = "text-align: center;">
+			With a spectacular view during both the day & night, the sight of Marina Bay makes every Singaporean feel proud to call this island our home. <br>
+			Crazy Rich Asians portrayed Marina Bay beautifully, with the wonderful wedding after party held at Gardens By The Bay or the engagement party at the lavishing 57th floor of Marina Bay Sands, making most of us feel more broke than ever. Fret not, because here's a guide for you to experience your own Crazy Rich Asians lifestyle without burning a hole in your pocket!
+		</p>
+		<br>
+		</div>
+		
+		<p class="hidden">
+		
+		
+		<!Slideshow>
+		<div class="slideshow-container">
+
+		<div class="mySlides fade">
+		  <div class="numbertext">1 / 3</div>
+		  <img src="MBS Skyline Night.jpg" style="width:100%" alt="Marina Bay">
+		  <div class="text">Marina Bay</div>
+		</div>
+
+		<div class="mySlides fade">
+		  <div class="numbertext">2 / 3</div>
+		  <img src="Flower Dome.jpg" style="width:100%" alt="Flower Dome">
+		  <div class="text">Flower Dome</div>
+		</div>
+
+		<div class="mySlides fade">
+		  <div class="numbertext">3 / 3</div>
+		  <img src="Esplanade.jpg" style="width:100%" alt="Esplanade">
+		  <div class="text">Esplanade</div>
+		</div>
+
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+		</div>
+		<br>
+
+		<div style="text-align:center">
+		  <span class="dot" onclick="currentSlide(1)"></span> 
+		  <span class="dot" onclick="currentSlide(2)"></span> 
+		  <span class="dot" onclick="currentSlide(3)"></span> 
+		</div>
+			
+		<script>
+		var slideIndex = 1;
+		showSlides(slideIndex);
+
+		function plusSlides(n) {
+		  showSlides(slideIndex += n);
+		}
+
+		function currentSlide(n) {
+		  showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+		  var i;
+		  var slides = document.getElementsByClassName("mySlides");
+		  var dots = document.getElementsByClassName("dot");
+		  if (n > slides.length) {slideIndex = 1}    
+		  if (n < 1) {slideIndex = slides.length}
+		  for (i = 0; i < slides.length; i++) {
+			  slides[i].style.display = "none";  
+		  }
+		  for (i = 0; i < dots.length; i++) {
+			  dots[i].className = dots[i].className.replace(" active", "");
+		  }
+		  slides[slideIndex-1].style.display = "block";  
+		  dots[slideIndex-1].className += " active";
+		}
+		</script>
+		
+		<br>
+		<hr class="solid">
+		
+		<h2 style="font-size:25pt; font-weight: bold; text-align: center; color: red">Things To Do</h2>
+		<h3 style="font-size:20pt; text-align:center">1. Gardens By The Bay</h3>
+		<div>
+			<div style="float: left; padding-left: 50px; margin-right: 10px">
+				<img src='Cloud Dome.jpg' width="525px" alt="Cloud Forest">
+			</div>
+		<div>
+		<br>
+		<p style="padding-right: 50px; font-style: italic">
+		There are many things to do here! The Flower Dome & Cloud Forest are perfect places to visit in the garden if you are not interested in feeding the mosquitoes. 
+		The Flower Dome, being awarded Guinness World Record for the largest glass greenhouse, allows one to get up-close with unusual plants native to the Mediterranean region, South African savannahs as well as arid deserts.
+		If one is interested in exotic plant species, such as pitcher plants and Venus Flytraps from around the world, the Cloud Forest is the perfect place. 
+		Designed as a lush indoor mountain with one of the world's largest waterfall and unique aerial walkways, one is able to enjoy the view of Marina Bay Waterfront. 
+		It is a great idea to visit during a very hot day because the air-conditioning in both ensures one will never feel heat again. 
+		Prices are listed in the table below for Singapore Residents & Non Residents.</p>
+		<br>
+		
+		<p style="text-align: center; font-size: 16px; text-decoration: underline">Singapore Residents</p>
+		
+		<table style="width:60%; text-align: center" border="1" align="center">
+			<tr>
+				<th>Ticket Type</th>
+				<th>Cloud Forest/Flower Dome</th>
+				<th>Both Domes</th>
+			</tr>
+			<tr>
+				<td>Adult</td>
+				<td>$12</td>
+				<td>$20</td>
+			</tr>
+			<tr>
+				<td>Senior Citizen (60 Years Old & Above)</td>
+				<td>$8</td>
+				<td>$15</td>
+			</tr>
+			<tr>
+				<td>Child (3-12 Years Old</td>
+				<td>$8</td>
+				<td>$12</td>
+			</tr>
+		</table>
+		
+		<p style="text-align: center; font-size: 16px; text-decoration: underline">Non Residents</p>
+		
+		<table style="width:60%; text-align: center" border="1" align="center">
+			<tr>
+				<th>Ticket Type</th>
+				<th>Cloud Forest/Flower Dome</th>
+				<th>Both Domes</th>
+			</tr>
+			<tr>
+				<td>Adult</td>
+				<td>$20</td>
+				<td>$28</td>
+			</tr>
+			<tr>
+				<td>Child (3-12 Years Old)</td>
+				<td>$12</td>
+				<td>$15</td>
+			</tr>
+		</table>
+		
+		<br>
+		<br>
+		
+		<div class="container">
+		  <img src="GBTB.jpg" alt="GBTB" style="width:100%;" class="center">
+		  <div class="text-block">
+		  <p>Tickets to the domes can be purchased with SRV vouchers and the Flower Dome constantly have seasonal changes within. 
+		  However, if one is not interested, another free activity would be to have a picnic with friends & family in the middle of the Supertree Grove and catch the Garden Rhapsody as Gardens By The Bay lights up alongside familiar tunes.
+		  </p>
+		  </div>
+		</div>
+		
+		<br>
+		<h3 style="font-size:20pt; text-align:center">2. Esplande Walk</h3>
+		
+		<div class="clearfix">
+		  <div class="img-container">
+			<img src="Merlion.jpg" alt="Merlion" style="width:100%; height: 60%">
+		  </div>
+		  <div class="img-container">
+			<img src="One Fullerton.jpg" alt="One Fullerton" style="width:100%; height: 60%">
+		  </div>
+		  <div class="img-container">
+			<img src="Esplanade Mall.jpg" alt="Esplanade Mall" style="width:100%; height: 60%">
+		  </div>
+		</div>
+		
+		<div class="clearfix">
+		  <div class="img-container">
+			<br>
+			  <p style="text-align:center">
+			  Taking a stroll down along the Singapore River can make one feel like a tourist for a day. 
+			  Cycling is also another travel option along the Esplanade Walk!
+			  You can enjoy the beautiful view of Marina Bay or even take photos with the famous Merlion statue
+			  </p>
+		  </div>
+		  <div class="img-container">
+			  <p style="text-align:center">
+			  With the same name as Fullerton hotel, One Fullerton is way more than hotel accomodation. 
+			  From a list of restaurants located in One Fullerton, one can enjoy the Crazy Rich Asian life for a day while dining at places such as P.S. Cafe, OverEasy, Bistro Aseana and many more. Delicious food with amazing view, it's definitely a win-win situation.
+			  </p>
+		  </div>
+		  <div class="img-container">
+			  <p style="text-align:center">
+			  One Fullerton is not the only mall along Esplanade Walk, with more food options at Esplanade Mall. 
+			  Other than F&B Outlets, there are also free performances that goes on Esplanade Outdoor Stage depending on the schedule. 
+			  Catching live band performances or dance is also a great date idea with friends, family or your significant other.
+			  </p>
+		  </div>
+		</div>
+
+		<br>
+		<h3 style="font-size:20pt; text-align:center">3. Marina Bay</h3>
+		
+		<div>
+			<div style="float: left; padding-left: 50px; margin-right: 10px">
+				<img src='The Shoppes at MBS.jpg' width="525px" alt="MBS Shoppes">
+			</div>
+		<div>
+		<br>
+		<br>
+		<br>
+		<p style="padding-right: 50px; font-style: italic">
+		Take a trip down to The Shoppes at MBS, where rows of luxury brands stand welcoming customers. 
+		The famous floating Louis Vuitton and Apple store are both located here. 
+		Even if you are not going to purchase anything, you should definitely check out the view at these two shops. 
+		Maybe you can even sign up for one of Apple's free lessons, upgrading your technical skills with a beautiful view.
+		Most importantly, one should not miss out the Michelin restaurants at The Shoppes, finally getting the chance to taste the famous Gordon Ramsay's recipes. 
+		Do keep a look-out for musical performances at the Sands Theatre.</p>
+		<br>
+		<br>
+		
+		<div>
+			<div style="float: left; padding-left: 50px; margin-right: 10px">
+				<img src='Infinity Pool.jpg' width="525px" alt="Infinity Pool">
+			</div>
+		<div>
+		<br>
+		<br>
+		<br>
+		<p style="padding-right: 50px; font-style: italic">
+		Want to take a dip in Singapore's hot weather? 
+		The famous infinity pool is stationed on the 57th floor of Marina Bay Sands hotel. 
+		Swimming with a beautiful view is an experience like no other, especially when the sun sets. 
+		It is only opened to hotel guests, but visitors are able to purchase a ticket to the 57th floor to catch the view and see the famous pool from Crazy Rich Asians up-close. 
+		THe 57th floor is also home to famous restaurants CÉ LA VI and LAVO, serving amazing cuisines and alcohols. 
+		This is a must catch experience, and one can even say they are "on top of the world" there.</p>
+		<br>
+		<br>
+		<br>
+		
+		<div>
+			<div style="float: left; padding-left: 50px; margin-right: 10px">
+				<img src='Art Science Museum.jpeg' width="525px" alt="Art Science Museum">
+			</div>
+		<div>
+		<br>
+		<br>
+		<br>
+		<p style="padding-right: 50px; font-style: italic">
+		The Art Science Museum catches many eyes because of its unqiue and beautiful structure. 
+		Located just outside of The Shoppes at Marina Bay Sands, the Art Science Museum is a wonderful place to visit with friends. 
+		Exhibitions ongoing can be checked on their website but the most popular one would be "Future World: Where Art Meets Science", proven by the typical instagram post of everyone who visited. 
+		Aside from the exhibitions, there is a little cafe open on the 1st floor, so if you need a coffee break you know where to go!</p>
+		<br>
+		<br>
+		<br>
+		<br>
+
+		<hr class="solid">
+		
+		<div class="container">
+		  <img src="MBS Skyline Day.jpg" alt="MBS Day" style="width:90%;" class="center">
+		  <div class="centered">
+		  Marina Bay is my most favourite place in Singapore, not only because of the view, but because of how connected the place is that I can easily walk from Marina Bay Sands to Esplanade. This is a great place to clear one's mind and enjoy when life gets tough!
+		  <br>
+		  For more information, do search for the respective places mentioned above.
+		  </div>
+		</div>
+				
+		
+		
+	</body>
+</html>
